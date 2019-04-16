@@ -46,6 +46,7 @@ count=0
 global names
 names=[]
 def writelog(text):
+    # 日志函数
     if log==1:
         with open('RNSlog.txt','a') as logfile:
             currtime=str(datetime.datetime.now())
@@ -56,6 +57,7 @@ writelog('RNS '+'版本 '+version)
 # Author:LWD
 # This code is used as an Easter Egg.
 def zwt():
+    # Easter Egg for the most adorable one.
     date=datetime.datetime.today()
     if str(date.month)=="4":
         if int(date.day)>=20:
@@ -69,6 +71,7 @@ def zwt():
         if int(date.day)<=15:
             print("Happy birthday ZWT!")
 def getname():
+    # 读取列表
     writelog('获取姓名列表：')
     with open('namelist.txt','r') as list:
         global count
@@ -84,12 +87,15 @@ def getname():
             names.append(namer)
             writelog(namer+' '+str(count))
 def getcount():
+    # 获取总数，调试用途。
     print(count)
 def getrand():
+    # 获取随机数
     number=random.randint(1,count)
     writelog('获取随机数：'+str(number))
     return number
 def getaname():
+    # 获取随机表中姓名
     number=getrand()
     aname=names[number-1:number]
     writelog('获取姓名：'+str(aname))
