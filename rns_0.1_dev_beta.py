@@ -13,7 +13,9 @@
 # 此代码无保修且仅带有作者的最好祝愿，作者不为任何软件、硬件错误或损失及数据丢失负责。
 # 请自行检查 Python 解释器是否携带病毒或恶意代码。
 # 请自行检查此文件是否被篡改或传输不完整。
-# 在发布之前把版本号改掉（下面）
+# Changelog 更新日志
+# 0.1 本地化完成
+# 0.0 首个版本 完成基本逻辑
 version='0.1开发者测试版'
 print('随机姓名选择器'+' '+version)
 print('作者：余晖')
@@ -51,8 +53,7 @@ writelog('RNS '+'版本 '+version)
 # Author:LWD
 # This code is used as an Easter Egg.
 def zwt():
-    from datetime import datetime
-    date=datetime.today()
+    date=datetime.datetime.today()
     if str(date.month)=="4":
         if int(date.day)>=20:
             print("Happy birthday ZWT!")
