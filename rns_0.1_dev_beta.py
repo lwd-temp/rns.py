@@ -101,9 +101,25 @@ if egg==1:
     zwt()
 print('-----------------------')
 # 开始运行
+print('开始抽取')
+getname()
+if cheat==1:
+    writelog('作弊已启动！')
+    nname=getaname()
+    while nname==yourname:
+        writelog("获取作弊者姓名，重试。")
+        nname=getaname()
+else:
+    nname=getaname()
+print('结果：')
+print(nname)
+writelog('输出完成。')
+print('完成')
+input("按Enter继续")
 while True:
     print('开始抽取')
-    getname()
+    if refresh==1:
+        getname()
     if cheat==1:
         writelog('作弊已启动！')
         nname=getaname()
@@ -117,4 +133,3 @@ while True:
     writelog('输出完成。')
     print('完成')
     input("按Enter继续")
-    
