@@ -35,6 +35,8 @@ yourname='余晖'
 log=1
 # Egg:彩蛋设置 1或0
 egg=1
+# Refresh 是否在重新抽取时重读列表 1或0
+refresh=0
 # [配置结束 End of config]
 print('[成功]配置加载完成')
 print('[信息]定义函数')
