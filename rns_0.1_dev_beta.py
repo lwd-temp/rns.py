@@ -14,9 +14,10 @@
 # 请自行检查 Python 解释器是否携带病毒或恶意代码。
 # 请自行检查此文件是否被篡改或传输不完整。
 # Changelog 更新日志
+# 0.1.1 优化循环逻辑 彩蛋代码与主程序合并
 # 0.1 本地化完成
-# 0.0 首个版本 完成基本逻辑
-version='0.1开发者测试版'
+# 0.0.1 首个版本 完成基本逻辑
+version='0.1.1开发者测试版'
 print('随机姓名选择器'+' '+version)
 print('作者：余晖')
 print('-----------------------')
@@ -68,7 +69,7 @@ def zwt():
         if int(date.day)<=15:
             print("Happy birthday ZWT!")
 def getname():
-    writelog('获取姓名列表')
+    writelog('获取姓名列表：')
     with open('namelist.txt','r') as list:
         global count
         global names
@@ -119,6 +120,7 @@ input("按Enter继续")
 while True:
     print('开始抽取')
     if refresh==1:
+        writelog("刷新姓名列表。")
         getname()
     if cheat==1:
         writelog('作弊已启动！')
