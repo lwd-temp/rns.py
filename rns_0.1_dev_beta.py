@@ -47,7 +47,7 @@ def writelog(text):
         with open('RNSlog.txt','a') as logfile:
             currtime=str(datetime.datetime.now())
             logfile.write(currtime+" 日志："+str(text)+'\n')
-writelog('日志函数定义，开始记录。')
+writelog('日志函数定义完成，开始记录。')
 writelog('RNS '+'版本 '+version)
 # HappyBirthdayZWT
 # Author:LWD
