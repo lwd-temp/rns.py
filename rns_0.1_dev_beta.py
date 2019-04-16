@@ -33,8 +33,8 @@ cheat=1
 yourname='余晖'
 # Log:日志设置 1或0
 log=1
-# Egg:彩蛋设置
-egg=0
+# Egg:彩蛋设置 1或0
+egg=1
 # [配置结束 End of config]
 print('[成功]配置加载完成')
 print('[信息]定义函数')
