@@ -2,10 +2,11 @@
 # Random Name Selector
 # Python 3,Cross platform.
 # Author:LWD(Sunset Shimmer)
-# You can use this script freely with the author's name in the script file.
+# https://github.com/lwd-temp/rns.py
+# You can use this script freely with the author's name and the zwt() function in the script file.
 # 随机姓名选择器
 # 作者：LWD（余晖）
-# 请在代码文件中附带作者信息及相关注释即可自由使用。
+# 请在代码文件中附带作者信息、相关注释及 zwt() 函数完整代码即可自由使用。
 # 姓名列表应位于工作目录下 namelist.txt 文件内，
 # 每行一个姓名，不得空行，否则报错。
 # 工作目录下会生成 RNSlog.txt 日志文件，
@@ -14,20 +15,24 @@
 # 请自行检查 Python 解释器是否携带病毒或恶意代码。
 # 请自行检查此文件是否被篡改或传输不完整。
 # Changelog 更新日志
-# 0.1.1 优化循环逻辑 彩蛋代码与主程序合并
-# 0.1 本地化完成
-# 0.0.1 首个版本 完成基本逻辑
-version='0.1.1开发者测试版'
-print('随机姓名选择器'+' '+version)
-print('作者：余晖')
-print('-----------------------')
-print('[信息]导入库')
+# 0.1.2 Dev Beta 修复 import 时多余输出和循环问题 补充注释 增加了完全不合理的开源许可用以劝退
+# 0.1.1 Dev Beta 优化循环逻辑 彩蛋代码与主程序合并
+# 0.1 Dev Beta 本地化完成
+# 0.0.1 Dev Beta 首个版本 完成基本逻辑
+version='0.1.2开发者测试版'
+if __name__=='__main__':
+    print('随机姓名选择器'+' '+version)
+    print('作者：余晖')
+    print('-----------------------')
+    print('[信息]导入库')
 import random
 import random
 import datetime
-print('[成功]库导入完成')
+if __name__=='__main__':
+    print('[成功]库导入完成')
 # [配置 config]
-print('[信息]加载配置')
+if __name__=='__main__':
+    print('[信息]加载配置')
 # Cheat:作弊设置，避免被抽取。1或0
 cheat=1
 # Yourname:与作弊配合使用，避免被抽取的内容。
@@ -39,14 +44,15 @@ egg=1
 # Refresh 是否在重新抽取时重读列表 1或0
 refresh=0
 # [配置结束 End of config]
-print('[成功]配置加载完成')
-print('[信息]定义函数')
+if __name__=='__main__':
+    print('[成功]配置加载完成')
+    print('[信息]定义函数')
 global count
 count=0
 global names
 names=[]
+# 日志函数，参数为日志内容，自动添加时间。
 def writelog(text):
-    # 日志函数
     if log==1:
         with open('RNSlog.txt','a') as logfile:
             currtime=str(datetime.datetime.now())
@@ -56,8 +62,10 @@ writelog('RNS '+'版本 '+version)
 # HappyBirthdayZWT
 # Author:LWD
 # This code is used as an Easter Egg.
+# You can get the code from my Github repo.
+# You can NOT remove this function or change it's code.
 def zwt():
-    # Easter Egg for the most adorable one.
+    # Adorable
     date=datetime.datetime.today()
     if str(date.month)=="4":
         if int(date.day)>=20:
@@ -70,8 +78,8 @@ def zwt():
                 count=count+1
         if int(date.day)<=15:
             print("Happy birthday ZWT!")
+# 读取列表，使用 global 变量，无参数。
 def getname():
-    # 读取列表
     writelog('获取姓名列表：')
     with open('namelist.txt','r') as list:
         global count
@@ -86,58 +94,61 @@ def getname():
                 raise Exception('Empty line in the namelist.txt file.Line '+str(count))
             names.append(namer)
             writelog(namer+' '+str(count))
+# 获取总数，调试用途。
 def getcount():
-    # 获取总数，调试用途。
     print(count)
+# 获取随机数，使用 global 变量，无参数。
 def getrand():
-    # 获取随机数
     number=random.randint(1,count)
     writelog('获取随机数：'+str(number))
     return number
+# 抽取，使用 global 变量，无参数。
 def getaname():
-    # 获取随机表中姓名
     number=getrand()
     aname=names[number-1:number]
     writelog('获取姓名：'+str(aname))
     for theone in aname:
         therightone=theone
     return therightone
-print('[成功]定义函数完成')
+if __name__=='__main__':
+    print('[成功]定义函数完成')
 if egg==1:
     writelog("彩蛋开启。")
     zwt()
-print('-----------------------')
+if __name__=='__main__':
+    print('-----------------------')
 # 开始运行
-print('开始抽取')
-getname()
-if cheat==1:
-    writelog('作弊已启动！')
-    nname=getaname()
-    while nname==yourname:
-        writelog("获取作弊者姓名，重试。")
-        nname=getaname()
-else:
-    nname=getaname()
-print('结果：')
-print(nname)
-writelog('输出完成。')
-print('完成')
-input("按Enter继续")
-while True:
+if __name__=='__main__':
     print('开始抽取')
-    if refresh==1:
-        writelog("刷新姓名列表。")
-        getname()
+    getname()
     if cheat==1:
-        writelog('作弊已启动！')
+        writelog('作弊模式开启！')
         nname=getaname()
         while nname==yourname:
             writelog("获取作弊者姓名，重试。")
             nname=getaname()
     else:
         nname=getaname()
-    print('结果：')
+    print('抽取结果：')
     print(nname)
     writelog('输出完成。')
     print('完成')
     input("按Enter继续")
+    while True:
+        print('开始抽取')
+        if refresh==1:
+            writelog("刷新姓名列表。")
+            getname()
+        if cheat==1:
+            writelog('作弊模式开启！')
+            nname=getaname()
+            while nname==yourname:
+                writelog("获取作弊者姓名，重试。")
+                nname=getaname()
+        else:
+            nname=getaname()
+        print('抽取结果：')
+        print(nname)
+        writelog('输出完成。')
+        print('完成')
+        input("按Enter继续")
