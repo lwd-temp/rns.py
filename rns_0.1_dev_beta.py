@@ -41,7 +41,7 @@ yourname='余晖'
 # Log:日志设置 1或0
 log=1
 # Egg:彩蛋设置 1或0
-egg=1
+egg=0
 # Refresh 是否在重新抽取时重读列表 1或0
 refresh=0
 # [配置结束 End of config]
@@ -117,7 +117,7 @@ if __name__=='__main__':
     print('[成功]定义函数完成')
 if egg==1:
     writelog("彩蛋开启。")
-    writelog(zwt())
+    zwt()
 if __name__=='__main__':
     print('-----------------------')
 # 开始运行
