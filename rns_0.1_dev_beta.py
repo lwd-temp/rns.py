@@ -20,7 +20,7 @@
 # 0.1.1 Dev Beta 优化循环逻辑 彩蛋代码与主程序合并
 # 0.1 Dev Beta 本地化完成
 # 0.0.1 Dev Beta 首个版本 完成基本逻辑
-version='0.1.2开发者测试版'
+version='0.1.3开发者测试版'
 if __name__=='__main__':
     print('随机姓名选择器'+' '+version)
     print('作者：余晖')
@@ -68,16 +68,16 @@ writelog('RNS '+'版本 '+version)
 def zwt():
     # Adorable
     date=datetime.datetime.today()
-    if str(date.month)=="4":
+    if date.month==4:
         if int(date.day)>=20:
             print("Happy birthday ZWT!")
-    if str(date.month)=="5":
-        if str(date.day)=="5":
+    if date.month==5:
+        if date.day==5:
             count=0
             while count!=4:
                 print("Happy birthday ZWT!")
                 count=count+1
-        if int(date.day)<=15:
+        if date.day<=15:
             print("Happy birthday ZWT!")
 # 读取列表，使用 global 变量，无参数。
 def getname():
