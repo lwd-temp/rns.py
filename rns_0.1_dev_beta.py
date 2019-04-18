@@ -66,7 +66,7 @@ writelog('RNS '+'版本 '+version)
 # Author:LWD
 # This code is used as an Easter Egg.
 # You can get the code from my Github repo.
-# You can NOT remove this function or change it's code.
+# You can NOT remove this function or edit its code.
 def zwt():
     # Adorable
     date=datetime.datetime.today()
