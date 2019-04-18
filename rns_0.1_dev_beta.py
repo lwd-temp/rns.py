@@ -15,6 +15,7 @@
 # 请自行检查 Python 解释器是否携带病毒或恶意代码。
 # 请自行检查此文件是否被篡改或传输不完整。
 # Changelog 更新日志
+# 0.1.3 Dev Beta 增加 log 内容
 # 0.1.2 Dev Beta 修复 import 时多余输出和循环问题 补充注释 增加了完全不合理的开源许可用以劝退
 # 0.1.1 Dev Beta 优化循环逻辑 彩蛋代码与主程序合并
 # 0.1 Dev Beta 本地化完成
@@ -81,6 +82,7 @@ def zwt():
 # 读取列表，使用 global 变量，无参数。
 def getname():
     writelog('获取姓名列表：')
+    print("读取列表...")
     with open('namelist.txt','r') as list:
         global count
         global names
@@ -94,6 +96,7 @@ def getname():
                 raise Exception('Empty line in the namelist.txt file.Line '+str(count))
             names.append(namer)
             writelog(namer+' '+str(count))
+    print("读取完成")
 # 获取总数，调试用途。
 def getcount():
     print(count)
@@ -114,7 +117,7 @@ if __name__=='__main__':
     print('[成功]定义函数完成')
 if egg==1:
     writelog("彩蛋开启。")
-    zwt()
+    writelog(zwt())
 if __name__=='__main__':
     print('-----------------------')
 # 开始运行
