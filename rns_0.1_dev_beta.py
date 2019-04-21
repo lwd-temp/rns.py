@@ -45,6 +45,8 @@ log=1
 # Egg:彩蛋设置 1或0
 # 不推荐在生产环境开启彩蛋
 egg=1
+# Logegg:彩蛋日志输出 1或0
+logegg=1
 # Refresh 是否在重新抽取时重读列表 1或0
 refresh=0
 # [配置结束 End of config]
@@ -74,15 +76,24 @@ def zwt():
     date=datetime.datetime.today()
     if date.month==4:
         if int(date.day)>=20:
-            print("Happy birthday ZWT!")
+            if logegg==1:
+                writelog("Happy birthday ZWT!")
+            else:
+                print("Happy birthday ZWT!")
     if date.month==5:
         if date.day==5:
             count=0
             while count!=4:
-                print("Happy birthday ZWT!")
+                if logegg==1:
+                    writelog("Happy birthday ZWT!")
+                else:
+                    print("Happy birthday ZWT!")
                 count=count+1
         if date.day<=15:
-            print("Happy birthday ZWT!")
+            if logegg==1:
+                writelog("Happy birthday ZWT!")
+            else:
+                print("Happy birthday ZWT!")
 # 读取列表，使用 global 变量，无参数。
 def getname():
     writelog('获取姓名列表：')
