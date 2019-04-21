@@ -43,7 +43,8 @@ yourname='余晖'
 # Log:日志设置 1或0
 log=1
 # Egg:彩蛋设置 1或0
-egg=0
+# 不推荐在生产环境开启彩蛋
+egg=1
 # Refresh 是否在重新抽取时重读列表 1或0
 refresh=0
 # [配置结束 End of config]
@@ -67,6 +68,7 @@ writelog('RNS '+'版本 '+version)
 # This code is used as an Easter Egg.
 # You can get the code from my Github repo.
 # You can NOT remove this function or edit its code.
+# 致敬我的第一个实用项目——中考倒计时，代码内有相同功能但低技巧的代码段。
 def zwt():
     # Adorable
     date=datetime.datetime.today()
