@@ -97,7 +97,7 @@ def zwt():
 # 读取列表，使用 global 变量，无参数。
 def getname():
     writelog('获取姓名列表：')
-    print("读取列表...")
+    print("读取列表")
     with open('namelist.txt','r') as list:
         global count
         global names
