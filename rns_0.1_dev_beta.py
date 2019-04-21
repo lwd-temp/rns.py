@@ -1,12 +1,12 @@
 #! /usr/bin/env python3
 # Random Name Selector
 # Python 3,Cross platform.
-# Author:LWD(Sunset Shimmer)
+# Author:ZWT(LWD)(Sunset Shimmer)
 # https://github.com/lwd-temp/rns.py
 # Copyright © 2019 lwd-temp@Github.com. All rights reserved.
 # You can use this script freely with the author's name and the zwt() function in the script file.
 # 随机姓名选择器
-# 作者：LWD（余晖）
+# 作者：ZWT（LWD）（余晖）
 # lwd-temp@Github.com 2019 版权所有。 保留所有权利。
 # 请在代码文件中附带作者信息、相关注释及 zwt() 函数完整代码即可自由使用。
 # 姓名列表应位于工作目录下 namelist.txt 文件内，
