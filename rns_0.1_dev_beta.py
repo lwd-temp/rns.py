@@ -1,12 +1,12 @@
 #! /usr/bin/env python3
 # Random Name Selector
 # Python 3,Cross platform.
-# Author:ZWT(LWD)(Sunset Shimmer)
+# Author:Sunset Shimmer
 # https://github.com/lwd-temp/rns.py
 # Copyright © 2019 lwd-temp@Github.com. All rights reserved.
 # You can use this script freely with the author's name and the zwt() function in the script file.
 # 随机姓名选择器
-# 作者：ZWT（LWD）（余晖）
+# 作者：余晖
 # lwd-temp@Github.com 2019 版权所有。 保留所有权利。
 # 请在代码文件中附带作者信息、相关注释及 zwt() 函数完整代码即可自由使用。
 # 姓名列表应位于工作目录下 namelist.txt 文件内，
@@ -17,7 +17,7 @@
 # 请自行检查 Python 解释器是否携带病毒或恶意代码。
 # 请自行检查此文件是否被篡改或传输不完整。
 # Changelog 更新日志
-# 0.1.3 Dev Beta 增加 log 内容 优化彩蛋逻辑
+# 0.1.3 Dev Beta 增加 log 内容 优化彩蛋逻辑 增加公益广告
 # 0.1.2 Dev Beta 修复 import 时多余输出和循环问题 补充注释 增加了完全不合理的开源许可用以劝退
 # 0.1.1 Dev Beta 优化循环逻辑 彩蛋代码与主程序合并
 # 0.1 Dev Beta 本地化完成
@@ -47,6 +47,8 @@ log=1
 egg=1
 # Logegg:彩蛋日志输出 1或0
 logegg=1
+# Care:关爱信息技术从业者公益广告 1或0
+care=1
 # Refresh 是否在重新抽取时重读列表 1或0
 refresh=0
 # [配置结束 End of config]
@@ -130,9 +132,12 @@ def getaname():
     return therightone
 if __name__=='__main__':
     print('[成功]定义函数完成')
-if egg==1:
-    writelog("彩蛋开启。")
-    zwt()
+    if care==1:
+        print("关注信息技术从业者 反对不合理工作时制")
+        writelog("关注信息技术从业者 反对不合理工作时制")
+    if egg==1:
+        writelog("彩蛋开启。")
+        zwt()
 if __name__=='__main__':
     print('-----------------------')
 # 开始运行
