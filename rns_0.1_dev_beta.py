@@ -4,18 +4,26 @@
 # Author:Sunset Shimmer
 # https://github.com/lwd-temp/rns.py
 # Copyright © 2019 lwd-temp@Github.com. All rights reserved.
+# Open Source License:
 # You can use this script freely with the author's name and the zwt() function in the script file.
+# Please read the Chinese version of the License for more information.
 # 随机姓名选择器
 # 作者：余晖
 # lwd-temp@Github.com 2019 版权所有。 保留所有权利。
-# 请在代码文件中附带作者信息、相关注释及 zwt() 函数完整代码即可自由使用。
+# 开源许可证：
+# 请在代码文件中附带作者信息、相关注释、彩蛋函数完整代码、关注信息技术从业者公益广告、公益广告触发代码及相关变量即可自由使用。
+# 若已明确知晓许可证要求会直接导致第三方修改版本程序的故障，可以注释相关代码。
+# 使用说明：
 # 姓名列表应位于工作目录下 namelist.txt 文件内，
 # 每行一个姓名，不得空行，否则报错。
 # 工作目录下会生成 RNSlog.txt 日志文件，
 # 可用于调试。
 # 此代码无保修且仅带有作者的最好祝愿，作者不为任何软件、硬件错误或损失及数据丢失负责。
-# 请自行检查 Python 解释器是否携带病毒或恶意代码。
-# 请自行检查此文件是否被篡改或传输不完整。
+# 请自行检查阁下的 Python 解释器发行版是否携带病毒或恶意软件，是否存在编译错误或对 Python 解释器源代码的不正当修改。
+# 请自行检查此文件是否被篡改或传输不完整，目前最好的校验方法是前往 Github.com 获取程序的最新更新。
+# Sunset Shimmer Education Friendship Lessons Teaching and Technology Development Group,GitHub, Inc.,
+# Hasbro.,Python Software Foundation 的雇员或组织成员以及 Sunset Shimmer 或 余晖、余晖烁烁、落日霞光、夕晖烁烁
+# （或其他可能翻译）或 lwd-temp@Github.com 不为使用此软件带来的任何损失负责。
 # Changelog 更新日志
 # 0.1.3 Dev Beta 增加 log 内容 优化彩蛋逻辑 增加公益广告
 # 0.1.2 Dev Beta 修复 import 时多余输出和循环问题 补充注释 增加了完全不合理的开源许可用以劝退
