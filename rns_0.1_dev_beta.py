@@ -47,7 +47,7 @@ log=1
 egg=1
 # Logegg:彩蛋日志输出 1或0
 logegg=1
-# Care:关爱信息技术从业者公益广告 1或0
+# Care:关注信息技术从业者公益广告 1或0
 care=1
 # Refresh 是否在重新抽取时重读列表 1或0
 refresh=0
