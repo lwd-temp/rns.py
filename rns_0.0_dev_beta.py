@@ -1,10 +1,10 @@
 #! /usr/bin/env python3
 # Random Name Selector
 # Python 3,Cross platform.
-# Author:ZWT(LWD)(Sunset Shimmer)
+# Author:Sunset Shimmer
 # You can use this script freely with the author's name in the script file.
 # 随机姓名选择器
-# 作者：ZWT（LWD）（余晖）
+# 作者：余晖
 # 请在代码文件中附带作者信息及相关注释即可自由使用。
 # 姓名列表应位于工作目录下 namelist.txt 文件内，
 # 每行一个姓名，不得空行，否则报错。
