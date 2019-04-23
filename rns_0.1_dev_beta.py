@@ -21,7 +21,7 @@
 # 此代码无保修且仅带有作者的最好祝愿，作者不为任何软件、硬件错误或损失及数据丢失负责。
 # 请自行检查阁下的 Python 解释器发行版是否携带病毒或恶意软件，是否存在编译错误或对 Python 解释器源代码的不正当修改。
 # 请自行检查此文件是否被篡改或传输不完整，目前最好的校验方法是前往 Github.com 获取程序的最新更新。
-# Sunset Shimmer Education Friendship Lessons Teaching and Technology Development Group,GitHub, Inc.,
+# Sunset Shimmer Education and Equestria Friendship Lessons Teaching and Technology Development Group Python Development Department,GitHub, Inc.,
 # Hasbro.,Python Software Foundation 的雇员或组织成员以及 Sunset Shimmer 或 余晖、余晖烁烁、落日霞光、夕晖烁烁
 # （或其他可能翻译）或 lwd-temp@Github.com 不为使用此软件带来的任何损失负责。
 # Changelog 更新日志
@@ -75,7 +75,7 @@ def writelog(text):
             currtime=str(datetime.datetime.now())
             logfile.write(currtime+" 日志："+str(text)+'\n')
 writelog('日志函数定义完成，开始记录。')
-writelog('RNS '+'版本 '+version)
+writelog('RNS '+'版本 '+version+' '+readableversion)
 # HappyBirthdayZWT
 # Author:LWD
 # This code is used as an Easter Egg.
@@ -153,6 +153,7 @@ if __name__=='__main__':
 if __name__=='__main__':
     print('开始抽取')
     getname()
+    input("就绪，按Enter抽取。")
     if cheat==1:
         writelog('作弊模式开启！')
         nname=getaname()
