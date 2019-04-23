@@ -30,9 +30,10 @@
 # 0.1.1 Dev Beta 优化循环逻辑 彩蛋代码与主程序合并
 # 0.1 Dev Beta 本地化完成
 # 0.0.1 Dev Beta 首个版本 完成基本逻辑
-version='0.1.3开发者测试版'
+readableversion='0.1.3开发者测试版'
+version='0.1.3 dev beta'
 if __name__=='__main__':
-    print('随机姓名选择器'+' '+version)
+    print('随机姓名选择器'+' '+readableversion)
     print('作者：余晖')
     print('-----------------------')
     print('[信息]导入库')
