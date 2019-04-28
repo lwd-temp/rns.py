@@ -51,7 +51,7 @@
 # 0.1 Dev Beta 本地化完成
 # 0.0.1 Dev Beta 首个版本 完成基本逻辑
 readableversion='0.1.4开发者测试版'
-version='0.1.3_dev_beta'
+version='0.1.4_dev_beta'
 if __name__=='__main__':
     print('随机姓名选择器'+' '+readableversion)
     print('作者：余晖')
