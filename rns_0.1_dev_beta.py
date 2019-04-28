@@ -44,13 +44,14 @@
 # Hasbro.,Python Software Foundation 的雇员或组织成员以及 Sunset Shimmer 或 余晖、余晖烁烁、落日霞光、夕晖烁烁
 # （或其他可能翻译）或 lwd-temp@Github.com 不为使用此软件带来的任何损失负责。
 # Changelog 更新日志
+# 0.1.4 Dev Beta 更新许可证
 # 0.1.3 Dev Beta 增加 log 内容 优化彩蛋逻辑 增加公益广告
 # 0.1.2 Dev Beta 修复 import 时多余输出和循环问题 补充注释 增加了完全不合理的开源许可用以劝退
 # 0.1.1 Dev Beta 优化循环逻辑 彩蛋代码与主程序合并
 # 0.1 Dev Beta 本地化完成
 # 0.0.1 Dev Beta 首个版本 完成基本逻辑
-readableversion='0.1.3开发者测试版'
-version='0.1.3 dev beta'
+readableversion='0.1.4开发者测试版'
+version='0.1.3_dev_beta'
 if __name__=='__main__':
     print('随机姓名选择器'+' '+readableversion)
     print('作者：余晖')
@@ -104,6 +105,7 @@ writelog('RNS '+'版本 '+version+' '+readableversion)
 # 致敬我的第一个实用项目——中考倒计时，代码内有相同功能但低技巧的代码段。
 def zwt():
     # Adorable
+    writelog("For the most adorable one.")
     date=datetime.datetime.today()
     if date.month==4:
         if int(date.day)>=20:
@@ -143,6 +145,7 @@ def getname():
             names.append(namer)
             writelog(namer+' '+str(count))
     print("读取完成")
+    writelog("读取完成。")
 # 获取总数，调试用途。
 def getcount():
     print(count)
@@ -173,7 +176,7 @@ if __name__=='__main__':
 if __name__=='__main__':
     print('开始抽取')
     getname()
-    input("就绪，按Enter抽取。")
+    input("就绪，按Enter抽取")
     if cheat==1:
         writelog('作弊模式开启！')
         nname=getaname()
