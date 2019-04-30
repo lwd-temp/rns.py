@@ -50,7 +50,7 @@
 # Hasbro.,Python Software Foundation 的雇员或组织成员以及 Sunset Shimmer 或 余晖、余晖烁烁、落日霞光、夕晖烁烁
 # （或其他可能翻译）或 lwd-temp@Github.com 不为使用此软件带来的任何损失负责。
 # Changelog 更新日志
-# 0.1.4 Dev Beta 更新许可证
+# 0.1.4 Dev Beta 更新许可证 参考了 https://github.com/kattgu7/Anti-996-License
 # 0.1.3 Dev Beta 增加 log 内容 优化彩蛋逻辑 增加公益广告
 # 0.1.2 Dev Beta 修复 import 时多余输出和循环问题 补充注释 增加了完全不合理的开源许可用以劝退
 # 0.1.1 Dev Beta 优化循环逻辑 彩蛋代码与主程序合并
