@@ -2,7 +2,7 @@
 [![996.icu](https://img.shields.io/badge/link-996.icu-red.svg)](https://996.icu)  
 Random Name Selector    
 Localization:随机姓名选择器    
-## Anthor  
+## Author  
 It's me.  
 ## Platform  
 Cross Platform,Python3(Linux or CLI Suggested)  
