@@ -7,7 +7,7 @@ It's me.
 ## Platform  
 Cross Platform,Python3(Linux or CLI Suggested)  
 ## Usage  
-Write every name each line in the file ``namelist.txt`` and put it with rns.py under the same working directory.  
+Write every name each line in the file ``namelist.txt`` and put it with ``rns.py`` under the same working directory.  
 Run ``python3 rns.py`` or ``import rns`` in the Python Interpreter for debug purpose.  
 ## Features  
 ### Cheat Mode  
@@ -24,3 +24,6 @@ https://996.icu
 Bugs are regarded as features until next update.  
 ## Changelog  
 0.1 Stable-The first stable version of RNS.Wouldn't update for a long time.  
+
+
+Thank you for using RNS.  
