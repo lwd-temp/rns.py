@@ -7,6 +7,7 @@ It's me.
 ## Platform  
 Cross Platform,Python3(Linux or CLI Suggested)  
 ## Usage  
+Write every name each line in the file ``namelist.txt`` and put it with rns.py under the same working directory.  
 ``python3 rns.py``  
 or ``import rns`` in the Python Interpreter for debug purpose.  
 ## Features  
