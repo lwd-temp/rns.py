@@ -1,7 +1,7 @@
 # rns.py
 [![996.icu](https://img.shields.io/badge/link-996.icu-red.svg)](https://996.icu)  
 Random Name Selector    
-随机姓名选择器    
+Localization:随机姓名选择器    
 ## Anthor  
 It's me.  
 ## Platform  
