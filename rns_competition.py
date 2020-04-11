@@ -1,17 +1,17 @@
 #! /usr/bin/env python3
 # 随机姓名选择器
-# 作者：李**
-# 此代码仅用于葫芦岛市青少年科技创新大赛，不得用于其他用途。
+# 作者：*******
+# 此代码仅用于********************，不得用于其他用途。
 # 使用说明：
 # 姓名列表应位于工作目录下 namelist.txt 文件内，
 # 每行一个姓名，不得空行，否则报错。
 # 工作目录下会生成 RNSlog.txt 日志文件，
 # 可用于调试。
-readableversion='0.1稳定版，仅用于葫芦岛市青少年科技创新大赛'
+readableversion='0.1稳定版，仅用于***********************'
 version='0.1_stable_competition'
 if __name__=='__main__':
     print('随机姓名选择器'+' '+readableversion)
-    print('作者：李**')
+    print('作者：*****************')
     print('-----------------------')
     print('[信息]导入库')
 import datetime
