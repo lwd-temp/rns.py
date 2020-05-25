@@ -17,7 +17,7 @@ TODO:More names available.
 The script can log almost every important process while running.  
 TODO:Log Level.  
 ### Easter Egg  
-An easter egg for remembering my previous work during my junior high school time.  
+An easter egg for remembering my previous work during my high school time.  
 ### Public Service Announcement  
 https://996.icu  
 ### Bugs  
